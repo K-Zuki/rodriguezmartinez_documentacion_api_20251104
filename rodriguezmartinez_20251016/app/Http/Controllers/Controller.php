@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-use OpenAPI\Attributes as OA;
+//use OpenAPI\Attributes as OA;
 
 /**
+ * @OA\OpenApi(
  * @OA\Info(
  *      version="1.0.0",
- *      title="Documntacion de API de Krista Lorena Rodriguez Martinez",
- *      description="API desarrollada por Kris Lorena Rodriguez Martinez, para la Universidad Francisco Gavidia",
+ *      title="Documentacion de API de Krista Lorena Rodriguez Martinez",
+ *      description="API desarrollada en php Laravel por Krista Lorena Rodriguez Martinez, para la Universidad Francisco Gavidia",
  *      @OA\Contact(
  *          email="ia.krista@ufg.edu.sv"      
  *      ),
@@ -15,6 +16,7 @@ use OpenAPI\Attributes as OA;
  *      name="Apache 2.0",
  *      url="http://www.apache.org/licenses/LICENSE-2.0.html"
  *      )
+ * )
  * )
  * 
  * @OA\Server(
@@ -33,17 +35,20 @@ use OpenAPI\Attributes as OA;
  * )
  * 
  * @OA\SecurityScheme(
- *      securityScheme="bearerAuth",
- *      type="http",
- *      scheme="bearer",
- *      name="Authorization",
- *      in="hader"
+ *    securityScheme="bearerAuth",
+ *    type="http",
+ *    scheme="bearer",
+ *    name="Authorization",
+ *    in="header"
  * )
  * 
  * @OA\Tag(
  *   name="Zonas",
  *   description="Proyecto de desarrollo para mantenimiento de tabla de bd Catalogos, especificamente para la tabla Zona"
  * )
+ * 
+ * 
+ * 
  */
 
 abstract class Controller
